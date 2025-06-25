@@ -1,79 +1,19 @@
+<!-- portada.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Polarización Política en Argentina</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .slide { display: none; }
-    .slide.active { display: block; }
-  </style>
+  <title>Revista - ISP 21</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <div class="min-h-screen flex flex-col items-center justify-center p-6">
-
-    <!-- Slide 1: Introducción -->
-    <div class="slide active" id="slide-1">
-      <img src="https://images.unsplash.com/photo-1591065411478-97722a82fe81?q=80&w=1026&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Polarización política" class="w-full max-w-3xl mb-6 rounded-lg shadow-lg">
-      <h1 class="text-4xl font-bold mb-4 text-center">1. Introducción</h1>
-      <p class="text-lg max-w-3xl text-center mb-6">
-        En esta investigación se analiza cómo la polarización política impacta en la vida cotidiana de los ciudadanos y cómo ha influido a lo largo de la historia argentina. Se estudia cómo este fenómeno se manifiesta en diferentes ámbitos, desde las relaciones sociales hasta la participación política, atravesando la educación, el consumo de medios y la convivencia democrática.
-      </p>
-    </div>
-
-    <!-- Slide 2: Polarización y redes sociales -->
-    <div class="slide" id="slide-2">
-      <img src="https://images.unsplash.com/photo-1674156423391-a65ab2a435de?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Redes sociales y polarización" class="w-full max-w-3xl mb-6 rounded-lg shadow-lg">
-      <h1 class="text-4xl font-bold mb-4 text-center">2. Redes sociales y polarización</h1>
-      <p class="text-lg max-w-3xl text-center mb-6">
-        A través del análisis de redes sociales, especialmente Twitter/X, se evidencia que el debate público ha derivado en una dinámica de confrontación constante. Expresar una opinión política puede desencadenar agresiones verbales, violencia simbólica, persecuciones y hostigamientos digitales. Esto refuerza la brecha entre sectores opuestos y deteriora el diálogo democrático.
-      </p>
-    </div>
-
-    <!-- Slide 3: Raíces históricas del conflicto -->
-    <div class="slide" id="slide-3">
-      <img src="https://realpolitik.com.ar/uploads/noticias/social/2024/11/20241107161755_politica-arg.webp.jpg" alt="Historia de la polarización" class="w-full max-w-3xl mb-6 rounded-lg shadow-lg">
-      <h1 class="text-4xl font-bold mb-4 text-center">3. Raíces históricas del conflicto</h1>
-      <p class="text-lg max-w-3xl text-center mb-6">
-        El fenómeno de la polarización en Argentina no es reciente. Tiene profundas raíces históricas: desde las disputas políticas del siglo XIX hasta el enfrentamiento entre peronismo y antiperonismo en el siglo XX. Estas divisiones ideológicas han dejado una huella duradera en la cultura política nacional, que hoy se expresa con fuerza en los espacios digitales y sociales.
-      </p>
-    </div>
-
-    <!-- Slide 4: Consecuencias de la polarización -->
-    <div class="slide" id="slide-4">
-      <img src="https://plus.unsplash.com/premium_photo-1663089435432-5f13c927b098?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Consecuencias de la polarización" class="w-full max-w-3xl mb-6 rounded-lg shadow-lg">
-      <h1 class="text-4xl font-bold mb-4 text-center">4. Consecuencias sociales y políticas</h1>
-      <p class="text-lg max-w-3xl text-center mb-6">
-        La polarización extrema compromete la calidad democrática, obstaculiza la gobernabilidad y erosiona el tejido social. Aumenta la intolerancia, limita la libertad de expresión y fomenta una ciudadanía fragmentada, donde predomina la desconfianza y se dificulta la construcción de consensos. También puede generar apatía política o radicalización.
-      </p>
-    </div>
-
-    <!-- Slide 5: Propuestas para mitigar la polarización -->
-    <div class="slide" id="slide-5">
-      <img src="https://plus.unsplash.com/premium_photo-1681911657230-320f780ac474?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Propuestas para el diálogo" class="w-full max-w-3xl mb-6 rounded-lg shadow-lg">
-      <h1 class="text-4xl font-bold mb-4 text-center">5. Propuestas para el diálogo</h1>
-      <p class="text-lg max-w-3xl text-center mb-6">
-        Para reducir los niveles de polarización se propone fomentar la educación cívica desde edades tempranas, promover un uso responsable de las redes sociales y fortalecer los valores democráticos. Es esencial crear espacios de diálogo plural, capacitar en habilidades de debate respetuoso y asegurar que los medios de comunicación actúen con responsabilidad ética.
-      </p>
-    </div>
-
-    <!-- Botones de navegación -->
-    <div class="flex gap-4 mt-6">
-      <button onclick="changeSlide(-1)" class="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400">Anterior</button>
-      <button onclick="changeSlide(1)" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Siguiente</button>
-    </div>
+<body class="bg-gray-100 font-sans">
+  <div class="min-h-screen flex flex-col justify-center items-center bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')] bg-repeat">
+    <h1 class="text-4xl md:text-6xl font-bold text-center mb-4">Revista ISP 21</h1>
+    <p class="text-xl text-center text-gray-700 mb-8">Desarrollo de Software - Problemáticas Sociales Contemporáneas</p>
+    <a href="grupo1.html" class="px-6 py-3 bg-black text-white text-xl rounded-full shadow-lg hover:bg-gray-800 transition">
+      Ver proyectos →
+    </a>
   </div>
-
-  <script>
-    let current = 0;
-    const slides = document.querySelectorAll('.slide');
-
-    function changeSlide(dir) {
-      slides[current].classList.remove('active');
-      current = (current + dir + slides.length) % slides.length;
-      slides[current].classList.add('active');
-    }
-  </script>
 </body>
 </html>
